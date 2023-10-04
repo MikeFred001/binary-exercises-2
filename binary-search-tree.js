@@ -54,7 +54,22 @@ class BinarySearchTree {
    * Returns the tree instance. Uses iteration. */
 
   insert(val) {
+    let current = this.root;
 
+    if (val < current.val) {
+      if (!current.left) {
+        current.left = new Node(val);
+      }
+    }
+
+    // while (current) {
+    //   if ()
+    //   if (val < current.left) {
+    //     current = current.left;
+    //   } else {
+    //     current = current.right;
+    //   }
+    // }
   }
 
   /** insertRecursively(val): Insert a new node into the BST with value val.
